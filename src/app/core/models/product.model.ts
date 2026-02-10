@@ -29,7 +29,7 @@ export interface ProductFilter {
   priceMin?: number;
   priceMax?: number;
   brands?: string[];
-  technologies?: ('FDM' | 'SLA' | 'SLS'][];
+  technologies?: ('FDM' | 'SLA' | 'SLS')[];
   inStockOnly?: boolean;
   minRating?: number;
   searchTerm?: string;
