@@ -1,0 +1,40 @@
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# Angular
+/dist
+/tmp
+/out-tsc
+.angular/
+.angular-cache/
+
+# Build outputs
+/build
+/coverage
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Environment
+.env
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Testing
+/coverage
+/.nyc_output
+
+# Logs
+logs
+*.log
