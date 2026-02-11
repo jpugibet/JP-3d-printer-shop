@@ -2,17 +2,19 @@ export interface Product {
     id: string;
     name: string;
     description: string;
+    nameEs?: string;
+    descriptionEs?: string;
     price: number;
     images: string[];
-    category: string;
-    technology: 'FDM' | 'SLA' | 'SLS';
-    volume: string;
-    resolution: string;
-    brand: string;
+    category?: string;
+    technology: 'FDM' | 'SLA' | 'SLS' | 'Hybrid';
+    volume?: string;
+    resolution?: string;
+    brand?: string;
     stock: number;
-    rating: number;
-    reviewsCount: number;
-    features: string[];
+    rating?: number;
+    reviewsCount?: number;
+    features?: string[];
 }
 
 export interface User {

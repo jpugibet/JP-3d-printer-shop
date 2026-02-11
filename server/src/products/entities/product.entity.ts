@@ -11,6 +11,12 @@ export class Product {
     @Column('text')
     description: string;
 
+    @Column({ nullable: true })
+    nameEs?: string;
+
+    @Column('text', { nullable: true })
+    descriptionEs?: string;
+
     @Column('decimal')
     price: number;
 

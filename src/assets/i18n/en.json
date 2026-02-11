@@ -1,0 +1,81 @@
+{
+    "COMMON": {
+        "ADD_TO_CART": "Add to Cart",
+        "OUT_OF_STOCK": "Out of Stock",
+        "PRICE": "Price",
+        "TOTAL": "Total",
+        "CHECKOUT": "Checkout",
+        "Loading": "Loading..."
+    },
+    "NAV": {
+        "HOME": "Home",
+        "CATALOG": "Catalog",
+        "CART": "Cart",
+        "LOGIN": "Login",
+        "REGISTER": "Register",
+        "PROFILE": "Profile",
+        "ADMIN": "Admin",
+        "LOGOUT": "Logout"
+    },
+    "CATALOG": {
+        "TITLE": "3D Printers",
+        "FILTER_TITLE": "Filters",
+        "FILTERS": "Filters",
+        "SEARCH_PLACEHOLDER": "Search products...",
+        "NO_PRODUCTS": "No products found.",
+        "LOW_STOCK": "Low Stock",
+        "DETAILS": "Details",
+        "TECHNOLOGY": "Technology",
+        "PRICE_RANGE": "Price Range",
+        "MIN": "Min",
+        "MAX": "Max",
+        "APPLY_FILTERS": "Apply Filters",
+        "CLEAR_FILTERS": "Clear Filters",
+        "PREVIOUS": "Previous",
+        "NEXT": "Next",
+        "PAGE": "Page",
+        "OF": "of"
+    },
+    "PRODUCT_DETAIL": {
+        "BACK_TO_CATALOG": "Back to Catalog",
+        "SPECIFICATIONS": "Specifications",
+        "TECHNOLOGY": "Technology",
+        "BUILD_VOLUME": "Build Volume",
+        "RESOLUTION": "Resolution",
+        "STOCK_STATUS": "Stock Status",
+        "REVIEWS": "reviews"
+    },
+    "CART": {
+        "TITLE": "Shopping Cart",
+        "EMPTY": "Your cart is empty.",
+        "CONTINUE_SHOPPING": "Continue Shopping",
+        "SUMMARY": "Order Summary",
+        "SUBTOTAL": "Subtotal",
+        "TAX": "Tax (estimated)",
+        "SHIPPING": "Shipping",
+        "FREE": "Free"
+    },
+    "CHECKOUT": {
+        "TITLE": "Checkout",
+        "SHIPPING_INFO": "Shipping Information",
+        "FULL_NAME": "Full Name",
+        "ADDRESS": "Address",
+        "CITY": "City",
+        "ZIP_CODE": "ZIP Code",
+        "PLACE_ORDER": "Place Order",
+        "ORDER_SUCCESS": "Order placed successfully!"
+    },
+    "AUTH": {
+        "LOGIN_TITLE": "Sign In",
+        "REGISTER_TITLE": "Create Account",
+        "EMAIL": "Email Address",
+        "PASSWORD": "Password",
+        "CONFIRM_PASSWORD": "Confirm Password",
+        "SUBMIT_LOGIN": "Sign In",
+        "SUBMIT_REGISTER": "Register",
+        "HAVE_ACCOUNT": "Already have an account?",
+        "NO_ACCOUNT": "Don't have an account?",
+        "SIGN_UP": "Sign up",
+        "LOG_IN": "Log in"
+    }
+}

@@ -23,7 +23,7 @@ export class CartService {
         });
     }
 
-    addToCart(product: Product) {
+    addItem(product: Product) {
         this.cartItems.update(items => {
             const existingItem = items.find(item => item.product.id === product.id);
             if (existingItem) {

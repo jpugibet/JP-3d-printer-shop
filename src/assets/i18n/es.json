@@ -1,0 +1,95 @@
+{
+    "COMMON": {
+        "ADD_TO_CART": "Añadir al Carrito",
+        "OUT_OF_STOCK": "Agotado",
+        "PRICE": "Precio",
+        "TOTAL": "Total",
+        "CHECKOUT": "Finalizar Compra",
+        "Loading": "Cargando..."
+    },
+    "NAV": {
+        "HOME": "Inicio",
+        "CATALOG": "Catálogo",
+        "CART": "Carrito",
+        "LOGIN": "Iniciar Sesión",
+        "REGISTER": "Registrarse",
+        "PROFILE": "Perfil",
+        "ADMIN": "Admin",
+        "LOGOUT": "Cerrar Sesión"
+    },
+    "CATALOG": {
+        "TITLE": "Impresoras 3D",
+        "FILTER_TITLE": "Filtros",
+        "FILTERS": "Filtros",
+        "SEARCH_PLACEHOLDER": "Buscar productos...",
+        "NO_PRODUCTS": "No se encontraron productos.",
+        "LOW_STOCK": "Poco Stock",
+        "DETAILS": "Detalles",
+        "TECHNOLOGY": "Tecnología",
+        "PRICE_RANGE": "Rango de Precio",
+        "MIN": "Mín",
+        "MAX": "Máx",
+        "APPLY_FILTERS": "Aplicar Filtros",
+        "CLEAR_FILTERS": "Limpiar Filtros",
+        "PREVIOUS": "Anterior",
+        "NEXT": "Siguiente",
+        "PAGE": "Página",
+        "OF": "de"
+    },
+    "PRODUCT_DETAIL": {
+        "BACK_TO_CATALOG": "Volver al Catálogo",
+        "SPECIFICATIONS": "Especificaciones",
+        "TECHNOLOGY": "Tecnología",
+        "BUILD_VOLUME": "Volumen de Impresión",
+        "RESOLUTION": "Resolución",
+        "STOCK_STATUS": "Estado del Stock",
+        "REVIEWS": "reseñas"
+    },
+    "CART": {
+        "TITLE": "Carrito de Compras",
+        "EMPTY": "Tu carrito está vacío.",
+        "CONTINUE_SHOPPING": "Seguir Comprando",
+        "SUMMARY": "Resumen del Pedido",
+        "SUBTOTAL": "Subtotal",
+        "TAX": "Impuestos (estimado)",
+        "SHIPPING": "Envío",
+        "FREE": "Gratis"
+    },
+    "CHECKOUT": {
+        "TITLE": "Finalizar Compra",
+        "SHIPPING_INFO": "Información de Envío",
+        "FULL_NAME": "Nombre Completo",
+        "ADDRESS": "Dirección",
+        "CITY": "Ciudad",
+        "ZIP_CODE": "Código Postal",
+        "PLACE_ORDER": "Realizar Pedido",
+        "ORDER_SUCCESS": "¡Pedido realizado con éxito!"
+    },
+    "AUTH": {
+        "LOGIN_TITLE": "Iniciar Sesión",
+        "REGISTER_TITLE": "Crear Cuenta",
+        "EMAIL": "Correo Electrónico",
+        "PASSWORD": "Contraseña",
+        "CONFIRM_PASSWORD": "Confirmar Contraseña",
+        "SUBMIT_LOGIN": "Iniciar Sesión",
+        "SUBMIT_REGISTER": "Registrarse",
+        "HAVE_ACCOUNT": "¿Ya tienes una cuenta?",
+        "NO_ACCOUNT": "¿No tienes una cuenta?",
+        "SIGN_UP": "Regístrate",
+        "LOG_IN": "Inicia sesión"
+    },
+    "FOOTER": {
+        "DESCRIPTION": "Impresoras 3D premium y accesorios para profesionales y aficionados.",
+        "SHOP": "Tienda",
+        "FDM": "Impresoras FDM",
+        "SLA": "Impresoras SLA",
+        "FILAMENTS": "Filamentos",
+        "SUPPORT": "Soporte",
+        "CONTACT": "Contáctanos",
+        "SHIPPING_POLICY": "Política de Envío",
+        "WARRANTY": "Garantía",
+        "NEWSLETTER": "Boletín",
+        "EMAIL_PLACEHOLDER": "Ingresa tu correo",
+        "RIGHTS": "Todos los derechos reservados."
+    }
+}

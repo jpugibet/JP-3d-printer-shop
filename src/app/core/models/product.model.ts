@@ -2,27 +2,30 @@ export interface Product {
   id: string;
   name: string;
   description: string;
+  nameEs?: string;
+  descriptionEs?: string;
   longDescription?: string;
   price: number;
-  brand: string;
-  technology: 'FDM' | 'SLA' | 'SLS';
-  buildVolume: {
+  brand?: string;
+  technology: 'FDM' | 'SLA' | 'SLS' | 'Hybrid';
+  stock?: number;
+  buildVolume?: {
     x: number;
     y: number;
     z: number;
     unit: 'mm' | 'cm';
   };
-  resolution: number;
+  resolution?: number;
   images: string[];
-  mainImage: string;
-  rating: number;
-  reviewsCount: number;
-  inStock: boolean;
-  stockQuantity: number;
-  specifications: Record<string, any>;
-  features: string[];
-  createdAt: Date;
-  updatedAt: Date;
+  mainImage?: string;
+  rating?: number;
+  reviewsCount?: number;
+  inStock?: boolean;
+  stockQuantity?: number;
+  specifications?: Record<string, any>;
+  features?: string[];
+  createdAt?: Date;
+  updatedAt?: Date;
 }
 
 export interface ProductFilter {
