@@ -1,4 +1,4 @@
 export const environment = {
     production: true,
-    apiUrl: 'https://api.jp-3d-printer-shop.com/api' // Placeholder
+    apiUrl: 'https://jp-3d-printer-shop-production.up.railway.app' // Placeholder
 };
