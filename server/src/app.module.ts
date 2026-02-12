@@ -16,8 +16,12 @@ import { Product } from './products/entities/product.entity';
             url: process.env.DATABASE_URL,
             entities: [Product],
             synchronize: true,
-            ssl: {
+            ssl: process.env.NODE_ENV === 'production' ? {
                 rejectUnauthorized: false,
+            } : false,
+            logging: process.env.NODE_ENV !== 'production' ? ['error', 'warn'] : ['error'],
+            extra: {
+                connectionTimeoutMillis: 10000,
             },
         }),
         ProductsModule,

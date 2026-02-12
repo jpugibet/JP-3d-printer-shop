@@ -27,13 +27,32 @@ git push origin main
 En el dashboard de Railway, ve a **Variables** y agrega:
 
 ```env
-DATABASE_URL=postgresql://neondb_owner:npg_qM1YyUhpNEF0@ep-odd-rice-aecmgar6-pooler.c-2.us-east-2.aws.neon.tech/neondb?channel_binding=require&sslmode=require
+DATABASE_URL=postgresql://user:password@host:port/database?sslmode=require
 PORT=3000
 NODE_ENV=production
 FRONTEND_URL=https://tu-app.netlify.app
 ```
 
-**⚠️ Importante:** Actualiza `FRONTEND_URL` después de desplegar el frontend en Netlify.
+**⚠️ IMPORTANTE - Configurar BASE DE DATOS:**
+
+#### Opción A: Usar Railway Postgres (Recomendado)
+1. En Railway, click en **"+ New"** → **"Database"** → **"Add PostgreSQL"**
+2. Railway creará automáticamente la variable `DATABASE_URL`
+3. La base de datos se conectará automáticamente a tu servicio
+
+#### Opción B: Usar Neon (Base de datos externa)
+1. Ve a [neon.tech](https://neon.tech) y crea un proyecto
+2. Copia el **Connection String** (debe incluir `?sslmode=require`)
+3. En Railway Variables, pega la URL completa en `DATABASE_URL`
+
+**Ejemplo de Neon DATABASE_URL:**
+```
+postgresql://neondb_owner:password@ep-xxx.us-east-2.aws.neon.tech/neondb?sslmode=require
+```
+
+**⚠️ Importante:** 
+- La URL debe terminar con `?sslmode=require` para conexiones SSL
+- Actualiza `FRONTEND_URL` después de desplegar el frontend en Netlify
 
 ### 1.4 Configurar Start Command
 En Railway, asegúrate que el comando de inicio sea:
@@ -109,9 +128,75 @@ FRONTEND_URL=https://jp-3d-printer-shop.netlify.app
 
 ### Probar el Backend
 ```bash
-curl https://tu-backend-railway.up.railway.app
-# Deberías ver "Hello World!" o la respuesta de tu API
+# Health check
+curl https://tu-backend-railway.up.railway.app/health
+
+# Deberías ver algo como:
+# {
+#   "status": "ok",
+#   "timestamp": "2026-02-12T...",
+#   "environment": "production",
+#   "database": "configured"
+# }
+
+# Probar productos
+curl https://tu-backend-railway.up.railway.app/products
 ```
+
+### Revisar Logs en Railway
+1. Ve a tu proyecto en Railway
+2. Click en tu servicio
+**Síntomas:**
+- Error: "Connection terminated unexpectedly"
+- Error: "password authentication failed"
+- Logs muestran: "🔗 Database URL: ❌ Missing"
+
+**Soluciones:**
+
+1. **Verificar que DATABASE_URL existe en Railway:**
+   - Ve a tu servicio en Railway
+   - Click en **"Variables"**
+   - Confirma que `DATABASE_URL` está configurada
+   - Debe empezar con `postgresql://`
+
+2. **Si usas Railway Postgres:**
+   ```
+   - Verifica que el servicio de Postgres esté corriendo (debe estar verde)
+   - Ve a la pestaña "Connect" del Postgres y copia la variable
+   - Railway debería conectarla automáticamente
+   ```
+
+3. **Si usas Neon:**
+   ```
+   - Ve a Neon Dashboard → Connection Details
+   - Copia el "Connection string" completo
+   - IMPORTANTE: Usa el endpoint "Pooled connection" no "Direct connection"
+   - Asegúrate que incluya ?sslmode=require al final
+   ```
+
+4. **Verificar formato correcto:**
+   ```
+   ✅ Correcto: postgresql://user:pass@host:5432/db?sslmode=require
+   ❌ Incorrecto: postgres://... (debe ser postgresql://)
+   ❌ Incorrecto: ...sin ?sslmode=require
+   ```
+
+5. **Redeploy después de cambiar variables:**
+   - Railway no siempre redespliega automáticamente
+   - Ve a Deployments → Click en los 3 puntos → "Redeploy"
+
+6. **Verificar con health check:**
+   ```bash
+   curl https://tu-app.railway.app/health
+   # Debe mostrar: "database": "configured"
+   ```
+5. Revisa los logs - deberías ver:
+   ```
+   🚀 Starting application...
+   📊 Environment: production
+   🔗 Database URL: ✅ Configured
+   ✅ Application is running on port 3000
+   ```
 
 ### Probar el Frontend
 1. Abre tu URL de Netlify en el navegador
