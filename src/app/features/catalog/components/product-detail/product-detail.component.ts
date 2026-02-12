@@ -6,6 +6,7 @@ import { CatalogService } from '../../services/catalog.service';
 import { Product } from '../../../../core/models/models';
 import { CartService } from '../../../../core/services/cart.service';
 import { ToastService } from '../../../../core/services/toast.service';
+import { AnalyticsService } from '../../../../core/services/analytics.service';
 import { SkeletonComponent } from '../../../../shared/components/skeleton/skeleton.component';
 
 @Component({
@@ -150,6 +151,7 @@ export class ProductDetailComponent implements OnInit {
   private cartService = inject(CartService);
   private toastService = inject(ToastService);
   private translateService = inject(TranslateService);
+  private analyticsService = inject(AnalyticsService);
 
   product = signal<Product | null>(null);
   selectedImage = signal<string | null>(null);
@@ -163,6 +165,14 @@ export class ProductDetailComponent implements OnInit {
         next: (p) => {
           this.product.set(p);
           this.loading.set(false);
+          
+          // Track product view en Google Analytics
+          this.analyticsService.trackProductView(
+            p.id.toString(),
+            p.name,
+            p.category,
+            p.price
+          );
         },
         error: () => this.loading.set(false)
       });
@@ -178,7 +188,15 @@ export class ProductDetailComponent implements OnInit {
 
   getProductDescription(): string {
     const p = this.product();
-    if (!p) return '';
+    if (!p) return '';${p.name} to cart`, 'success');
+      
+      // Track add to cart en Google Analytics
+      this.analyticsService.trackAddToCart(
+        p.id.toString(),
+        p.name,
+        p.price,
+        1 // cantidad
+      
     const currentLang = this.translateService.currentLang;
     return currentLang === 'es' && p.descriptionEs ? p.descriptionEs : p.description;
   }

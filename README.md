@@ -82,6 +82,7 @@ npm run lint       # Analiza el código con ESLint
 - **SEO Optimized**: Meta tags dinámicos y sitemap
 - **PWA Ready**: Preparado para Progressive Web App
 - **Accessibility**: Cumple con estándares WCAG 2.1
+- **Google Analytics**: Tracking de eventos y e-commerce integrado ([Ver guía](./docs/GOOGLE_ANALYTICS.md))
 
 ## 🔐 Seguridad
 
@@ -107,7 +108,10 @@ npm run lint       # Analiza el código con ESLint
 
 ## 📖 Documentación
 
-Para más detalles sobre el proyecto, consulta la [documentación completa](./docs/prompt-proyecto.md).
+- [Documentación completa del proyecto](./docs/prompt-proyecto.md)
+- [Guía de Google Analytics](./docs/GOOGLE_ANALYTICS.md)
+- [Guía de Despliegue](./DEPLOYMENT.md)
+- [Guía Rápida de Desarrollo](./QUICK_START.md)
 
 ## 👥 Autor
 
