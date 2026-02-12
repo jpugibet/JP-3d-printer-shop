@@ -188,15 +188,7 @@ export class ProductDetailComponent implements OnInit {
 
   getProductDescription(): string {
     const p = this.product();
-    if (!p) return '';${p.name} to cart`, 'success');
-      
-      // Track add to cart en Google Analytics
-      this.analyticsService.trackAddToCart(
-        p.id.toString(),
-        p.name,
-        p.price,
-        1 // cantidad
-      
+    if (!p) return '';
     const currentLang = this.translateService.currentLang;
     return currentLang === 'es' && p.descriptionEs ? p.descriptionEs : p.description;
   }
@@ -205,7 +197,15 @@ export class ProductDetailComponent implements OnInit {
     const p = this.product();
     if (p) {
       this.cartService.addItem(p);
-      this.toastService.show(`Added \${p.name} to cart`, 'success');
+      this.toastService.show(`Added ${p.name} to cart`, 'success');
+      
+      // Track add to cart en Google Analytics
+      this.analyticsService.trackAddToCart(
+        p.id.toString(),
+        p.name,
+        p.price,
+        1 // cantidad
+      );
     }
   }
 
