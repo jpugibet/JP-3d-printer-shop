@@ -7,5 +7,5 @@ export const environment = {
     apiUrl: 'https://jp-3d-printer-shop-production.up.railway.app', // ⚠️ Reemplaza con tu URL real
     
     // Google Analytics - Reemplaza con tu Measurement ID (G-XXXXXXXXXX)
-    googleAnalyticsId: 'G-XXXXXXXXXX' // ⚠️ Reemplaza con tu ID real de GA4
+    googleAnalyticsId: 'G-G8PPR7VQXD' // ⚠️ Reemplaza con tu ID real de GA4
 };
