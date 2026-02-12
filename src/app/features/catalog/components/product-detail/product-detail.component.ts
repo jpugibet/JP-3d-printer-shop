@@ -170,7 +170,7 @@ export class ProductDetailComponent implements OnInit {
           this.analyticsService.trackProductView(
             p.id.toString(),
             p.name,
-            p.category,
+            p.category || p.technology,
             p.price
           );
         },
