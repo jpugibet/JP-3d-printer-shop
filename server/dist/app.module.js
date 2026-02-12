@@ -28,8 +28,12 @@ exports.AppModule = AppModule = __decorate([
                 url: process.env.DATABASE_URL,
                 entities: [product_entity_1.Product],
                 synchronize: true,
-                ssl: {
+                ssl: process.env.NODE_ENV === 'production' ? {
                     rejectUnauthorized: false,
+                } : false,
+                logging: process.env.NODE_ENV !== 'production' ? ['error', 'warn'] : ['error'],
+                extra: {
+                    connectionTimeoutMillis: 10000,
                 },
             }),
             products_module_1.ProductsModule,
