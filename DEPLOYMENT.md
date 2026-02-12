@@ -60,12 +60,47 @@ En Railway, asegúrate que el comando de inicio sea:
 npm run start:prod
 ```
 
-### 1.5 Obtener la URL del Backend
-Después del despliegue, Railway te dará una URL como:
+### 1.5 Generar y Obtener la URL del Backend
+
+Railway **NO genera automáticamente una URL pública**. Debes generarla manualmente:
+
+#### Pasos para generar la URL:
+
+1. **Ve a tu proyecto en Railway Dashboard**
+   - Abre [railway.app](https://railway.app)
+   - Selecciona tu proyecto
+
+2. **Selecciona tu servicio**
+   - Click en el servicio del backend (no en la base de datos)
+
+3. **Ve a la pestaña "Settings"**
+   - Scroll hacia abajo hasta la sección **"Networking"**
+
+4. **Genera el dominio público:**
+   - Busca la opción **"Public Networking"** o **"Generate Domain"**
+   - Click en **"Generate Domain"** 
+   - Railway generará automáticamente una URL como:
+     ```
+     https://jp-3d-printer-shop-production.up.railway.app
+     ```
+   
+5. **Copia la URL generada**
+   - Haz click en el icono de copiar junto a la URL
+   - O selecciona y copia manualmente
+
+**⚠️ Importante:** 
+- Sin esta URL, tu backend NO será accesible desde internet
+- **Guarda esta URL** - la necesitarás para configurar el frontend
+- Puedes usar un dominio custom si lo prefieres (en la misma sección)
+
+#### Verificar que funciona:
+```bash
+# Reemplaza con tu URL real
+curl https://tu-app.railway.app/health
+
+# Deberías ver:
+# {"status":"ok","timestamp":"...","database":"configured"}
 ```
-https://jp-3d-printer-shop-production.up.railway.app
-```
-**Guarda esta URL - la necesitarás para el frontend.**
 
 ---
 
