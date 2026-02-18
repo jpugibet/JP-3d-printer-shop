@@ -1,5 +1,7 @@
 # 📊 Google Analytics - Guía de Configuración
 
+> **💡 NUEVO**: Ahora también soportamos **Google Tag Manager (GTM)**. GTM te permite gestionar múltiples herramientas de marketing desde un solo lugar. [Ver guía de GTM →](./GOOGLE_TAG_MANAGER.md)
+
 ## 🎯 Configuración Rápida
 
 ### 1. Obtener tu Google Analytics Measurement ID

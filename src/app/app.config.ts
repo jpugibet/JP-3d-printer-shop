@@ -9,11 +9,17 @@ import { routes } from './app.routes';
 import { AnalyticsService } from './core/services/analytics.service';
 import { environment } from '../environments/environment';
 
-// Función para inicializar Google Analytics
+// Función para inicializar Google Analytics y Google Tag Manager
 export function initializeAnalytics(analyticsService: AnalyticsService) {
     return () => {
+        // Inicializar Google Analytics
         if (environment.googleAnalyticsId) {
             analyticsService.initialize(environment.googleAnalyticsId);
+        }
+        
+        // Inicializar Google Tag Manager
+        if ((environment as any).googleTagManagerId) {
+            analyticsService.initializeGTM((environment as any).googleTagManagerId);
         }
     };
 }
