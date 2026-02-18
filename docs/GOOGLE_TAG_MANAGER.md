@@ -1,5 +1,7 @@
 # 🏷️ Google Tag Manager - Guía de Configuración
 
+> **🎯 CONFIGURACIÓN COMPLETA DE ETIQUETAS**: Para instrucciones detalladas paso a paso sobre cómo configurar todas las etiquetas en GTM (GA4, Ecommerce, Facebook Pixel, etc.), consulta la [Guía Completa de Configuración de Etiquetas →](./GTM_TAGS_SETUP.md)
+
 ## 🎯 ¿Qué es Google Tag Manager?
 
 Google Tag Manager (GTM) es un sistema de gestión de etiquetas que te permite administrar y desplegar tags de marketing (píxeles de seguimiento, códigos de análisis, etc.) en tu sitio web sin tener que modificar el código directamente.
@@ -71,37 +73,34 @@ También puedes verificar en la pestaña "Network":
 
 ---
 
-## 🏷️ Configurar Google Analytics 4 a través de GTM
+## 🏷️ Configurar Etiquetas en GTM
 
-Una vez que GTM esté configurado, puedes gestionar GA4 desde GTM:
+### 📋 Guía Completa de Configuración
 
-### Paso 1: Crear la Etiqueta de GA4
+Tu aplicación ya está preparada para enviar eventos a GTM. Ahora necesitas configurar las etiquetas en la interfaz de Google Tag Manager.
 
-1. En GTM, ve a **Tags** → **New**
-2. Configuración de la etiqueta:
-   - Tipo: **Google Analytics: GA4 Configuration**
-   - Measurement ID: `G-TU123456789` (tu ID de GA4)
-3. Trigger:
-   - Tipo: **Initialization - All Pages**
-4. Guarda y nómbrala: "GA4 - Configuration"
+**👉 Consulta la [Guía Completa de Configuración de Etiquetas](./GTM_TAGS_SETUP.md)** que incluye:
 
-### Paso 2: Crear Etiqueta de Page Views
+- ✅ **Google Analytics 4**: Configuración base y eventos
+- ✅ **Eventos de Ecommerce**: view_item, add_to_cart, begin_checkout, purchase
+- ✅ **Variables del DataLayer**: Configuración y uso
+- ✅ **Triggers (Activadores)**: Para cada tipo de evento
+- ✅ **Facebook Pixel**: Configuración opcional
+- ✅ **Testing en Preview Mode**: Cómo verificar que todo funciona
+- ✅ **Solución de problemas**: Errores comunes y soluciones
 
-1. **Tags** → **New**
-2. Configuración:
-   - Tipo: **Google Analytics: GA4 Event**
-   - Configuration Tag: Selecciona "GA4 - Configuration"
-   - Event Name: `page_view`
-3. Trigger:
-   - Tipo: **Page View - All Pages**
-4. Guarda y nómbrala: "GA4 - Page View"
+### Resumen Rápido
 
-### Paso 3: Publicar
+Las etiquetas principales que necesitas configurar:
 
-1. Click en **Submit** (arriba a la derecha)
-2. Nombre de versión: "Initial Setup"
-3. Descripción: "Configuración inicial de GA4"
-4. Click en **Publish**
+1. **GA4 - Configuration**: Configuración base de Google Analytics
+2. **GA4 - Page View**: Seguimiento de páginas vistas
+3. **GA4 - View Item**: Cuando se ve un producto
+4. **GA4 - Add to Cart**: Cuando se agrega al carrito
+5. **GA4 - Begin Checkout**: Inicio del proceso de compra
+6. **GA4 - Purchase**: Compra completada
+
+**[→ Ver instrucciones detalladas paso a paso](./GTM_TAGS_SETUP.md)**
 
 ---
 

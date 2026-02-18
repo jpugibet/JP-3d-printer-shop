@@ -108,12 +108,21 @@
         "FORM_TITLE": "Envíanos un Mensaje",
         "NAME": "Tu Nombre",
         "NAME_PLACEHOLDER": "Juan Pérez",
+        "NAME_REQUIRED": "El nombre es obligatorio",
         "EMAIL_PLACEHOLDER": "tu.correo@ejemplo.com",
+        "EMAIL_INVALID": "Por favor, ingresa un correo electrónico válido",
         "SUBJECT": "Asunto",
         "SUBJECT_PLACEHOLDER": "¿Cómo podemos ayudarte?",
+        "SUBJECT_REQUIRED": "El asunto es obligatorio",
         "MESSAGE": "Mensaje",
         "MESSAGE_PLACEHOLDER": "Cuéntanos más sobre tu consulta...",
+        "MESSAGE_REQUIRED": "El mensaje es obligatorio",
         "SEND": "Enviar Mensaje",
+        "SENDING": "Enviando...",
+        "SUCCESS_TITLE": "¡Mensaje Enviado!",
+        "SUCCESS_MESSAGE": "Gracias por contactarnos. Te responderemos pronto.",
+        "ERROR_TITLE": "Error al Enviar",
+        "ERROR_MESSAGE": "Hubo un problema al enviar tu mensaje. Por favor, inténtalo de nuevo.",
         "MAP": "Nuestra Ubicación"
     }
 }

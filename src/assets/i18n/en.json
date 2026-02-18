@@ -94,12 +94,21 @@
         "FORM_TITLE": "Send us a Message",
         "NAME": "Your Name",
         "NAME_PLACEHOLDER": "John Doe",
+        "NAME_REQUIRED": "Name is required",
         "EMAIL_PLACEHOLDER": "your.email@example.com",
+        "EMAIL_INVALID": "Please enter a valid email address",
         "SUBJECT": "Subject",
         "SUBJECT_PLACEHOLDER": "How can we help you?",
+        "SUBJECT_REQUIRED": "Subject is required",
         "MESSAGE": "Message",
         "MESSAGE_PLACEHOLDER": "Tell us more about your inquiry...",
+        "MESSAGE_REQUIRED": "Message is required",
         "SEND": "Send Message",
+        "SENDING": "Sending...",
+        "SUCCESS_TITLE": "Message Sent!",
+        "SUCCESS_MESSAGE": "Thank you for contacting us. We'll get back to you soon.",
+        "ERROR_TITLE": "Send Error",
+        "ERROR_MESSAGE": "There was a problem sending your message. Please try again.",
         "MAP": "Our Location"
     }
 }
