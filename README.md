@@ -79,10 +79,14 @@ npm run lint       # Analiza el código con ESLint
 - **Lazy Loading**: Carga diferida de módulos para mejor rendimiento
 - **SSR Ready**: Preparado para Server-Side Rendering con Angular Universal
 - **Responsive Design**: Mobile-first approach
-- **SEO Optimized**: Meta tags dinámicos y sitemap
+- **SEO Optimized**: Meta tags dinámicos y sitemap ([Ver guía](./docs/GOOGLE_SEARCH_CONSOLE.md))
 - **PWA Ready**: Preparado para Progressive Web App
 - **Accessibility**: Cumple con estándares WCAG 2.1
-- **Google Analytics**: Tracking de eventos y e-commerce integrado ([Ver guía](./docs/GOOGLE_ANALYTICS.md))
+- **Analytics & Tracking**: 
+  - Google Analytics 4 para behavioural tracking ([Ver guía](./docs/GOOGLE_ANALYTICS.md))
+  - Google Tag Manager para gestión centralizada de etiquetas ([Ver guía](./docs/GOOGLE_TAG_MANAGER.md))
+  - Eventos de ecommerce completos ([Ver setup](./docs/GTM_TAGS_SETUP.md))
+  - Dashboards visuales con Looker Studio ([Ver guía](./docs/LOOKER_STUDIO.md))
 
 ## 🔐 Seguridad
 
@@ -108,10 +112,19 @@ npm run lint       # Analiza el código con ESLint
 
 ## 📖 Documentación
 
+### Documentación General
 - [Documentación completa del proyecto](./docs/prompt-proyecto.md)
-- [Guía de Google Analytics](./docs/GOOGLE_ANALYTICS.md)
 - [Guía de Despliegue](./DEPLOYMENT.md)
 - [Guía Rápida de Desarrollo](./QUICK_START.md)
+
+### Analytics y Marketing
+- [Índice de Documentación Analytics](./docs/README.md) - **Empieza aquí**
+- [Google Analytics 4](./docs/GOOGLE_ANALYTICS.md) - Tracking básico
+- [Google Tag Manager](./docs/GOOGLE_TAG_MANAGER.md) - Gestión de etiquetas
+- [Configuración de Etiquetas GTM](./docs/GTM_TAGS_SETUP.md) - Setup completo paso a paso
+- [Looker Studio](./docs/LOOKER_STUDIO.md) - Dashboards y reportes visuales
+- [Looker Studio Quick Start](./docs/LOOKER_STUDIO_QUICK_START.md) - Guía rápida 15 min
+- [Google Search Console](./docs/GOOGLE_SEARCH_CONSOLE.md) - SEO y visibilidad
 
 ## 👥 Autor
 

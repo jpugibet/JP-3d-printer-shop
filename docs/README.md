@@ -91,6 +91,51 @@ Guía detallada paso a paso para configurar todas las etiquetas en Google Tag Ma
 
 ---
 
+### 📊 Visualización y Reportes
+
+#### [Looker Studio](./LOOKER_STUDIO.md) 🎨
+Guía completa para crear dashboards personalizados y reportes visuales con Looker Studio.
+
+**Contenido**:
+- ✅ Conectar GA4 con Looker Studio
+- ✅ Dashboards recomendados para ecommerce:
+  - Overview General
+  - Ecommerce Performance
+  - Marketing & Acquisition
+  - Behavior & Product Analytics
+  - User Journey & Engagement
+- ✅ Métricas clave de ecommerce
+- ✅ Guías paso a paso para crear dashboards
+- ✅ Métricas calculadas (Cart Abandonment, AOV, etc.)
+- ✅ Templates listos para usar
+- ✅ Reportes automáticos por email
+- ✅ Mejores prácticas de visualización
+
+**¿Cuándo usar esta guía?**
+- **DESPUÉS** de tener datos fluyendo en GA4
+- Para crear dashboards ejecutivos
+- Para visualizar el rendimiento de la tienda
+- Para compartir reportes con tu equipo
+- Para análisis profundo de productos y usuarios
+
+#### [Looker Studio Quick Start](./LOOKER_STUDIO_QUICK_START.md) ⚡
+Guía rápida de 15 minutos para crear tu primer dashboard.
+
+**Contenido**:
+- ✅ Conexión rápida con GA4
+- ✅ Crear dashboard en 5 minutos
+- ✅ Métricas esenciales
+- ✅ Campos calculados útiles
+- ✅ Configurar reportes automáticos
+- ✅ Troubleshooting rápido
+
+**¿Cuándo usar esta guía?**
+- Para empezar rápido con Looker Studio
+- Si necesitas un dashboard funcional YA
+- Para referencia rápida de métricas
+
+---
+
 ## 🗺️ Flujo de Configuración Recomendado
 
 ### Paso 1: Fundamentos
@@ -115,10 +160,17 @@ Guía detallada paso a paso para configurar todas las etiquetas en Google Tag Ma
 3. Envía el sitemap
 4. Monitorea el rendimiento
 
-### Paso 5: Monitoreo
+### Paso 5: Dashboards y Visualización
+1. Sigue la guía [LOOKER_STUDIO.md](./LOOKER_STUDIO.md)
+2. Conecta GA4 con Looker Studio
+3. Crea tu primer dashboard de ecommerce
+4. Configura reportes automáticos por email
+
+### Paso 6: Monitoreo Continuo
 1. Verifica eventos en GA4
 2. Monitorea Search Console semanalmente
-3. Optimiza según los datos obtenidos
+3. Revisa dashboards en Looker Studio
+4. Optimiza según los datos obtenidos
 
 ---
 
@@ -133,6 +185,25 @@ Guía detallada paso a paso para configurar todas las etiquetas en Google Tag Ma
 1. Sigue [GOOGLE_SEARCH_CONSOLE.md](./GOOGLE_SEARCH_CONSOLE.md)
 2. Implementa las mejores prácticas de SEO
 3. Monitorea las métricas de rendimiento
+
+### "Quiero crear dashboards visuales para mi equipo"
+1. Asegúrate de tener GA4 configurado con datos fluyendo
+2. Sigue [LOOKER_STUDIO.md](./LOOKER_STUDIO.md)
+3. Conecta GA4 con Looker Studio
+4. Crea dashboards usando las plantillas recomendadas
+5. Comparte reportes con tu equipo
+
+### "Quiero analizar el rendimiento de mis productos"
+1. Ve a [LOOKER_STUDIO.md](./LOOKER_STUDIO.md) → Dashboard 4: Behavior & Product Analytics
+2. Crea tabla de Product Performance
+3. Agrega métricas calculadas (Add-to-cart rate, Conversion rate)
+4. Configura filtros por categoría
+
+### "Necesito reportes semanales automáticos"
+1. Crea tu dashboard en Looker Studio
+2. Ve a [LOOKER_STUDIO.md](./LOOKER_STUDIO.md) → Sección "Reportes Automáticos por Email"
+3. Configura Schedule email delivery
+4. Selecciona frecuencia y destinatarios
 
 ### "Quiero agregar Facebook Pixel"
 1. Asegúrate de tener GTM configurado
@@ -153,6 +224,7 @@ Guía detallada paso a paso para configurar todas las etiquetas en Google Tag Ma
 - [ ] Google Tag Manager configurado
 - [ ] Google Search Console verificado
 - [ ] Sitemap enviado
+- [ ] Looker Studio conectado
 
 ### Etiquetas de GTM
 - [ ] GA4 - Configuration
@@ -162,10 +234,19 @@ Guía detallada paso a paso para configurar todas las etiquetas en Google Tag Ma
 - [ ] GA4 - Begin Checkout
 - [ ] GA4 - Purchase
 
+### Dashboards de Looker Studio
+- [ ] Dashboard de Ecommerce Overview creado
+- [ ] Scorecards de Revenue, Orders, AOV configurados
+- [ ] Gráfico de Revenue Trend agregado
+- [ ] Tabla de Top Products configurada
+- [ ] Filtros interactivos agregados
+- [ ] Reportes por email configurados
+
 ### Testing
 - [ ] Preview Mode ejecutado
 - [ ] Eventos verificados en Tag Assistant
 - [ ] Datos visibles en GA4 Realtime
+- [ ] Dashboards de Looker Studio mostrando datos
 - [ ] No hay errores en consola
 
 ### Producción
@@ -173,6 +254,7 @@ Guía detallada paso a paso para configurar todas las etiquetas en Google Tag Ma
 - [ ] Sitio desplegado
 - [ ] Eventos funcionando en producción
 - [ ] Search Console monitoreando
+- [ ] Looker Studio dashboards compartidos con equipo
 
 ---
 
@@ -182,11 +264,13 @@ Guía detallada paso a paso para configurar todas las etiquetas en Google Tag Ma
 - [Google Analytics Help](https://support.google.com/analytics)
 - [Google Tag Manager Help](https://support.google.com/tagmanager)
 - [Google Search Console Help](https://support.google.com/webmasters)
+- [Looker Studio Help](https://support.google.com/looker-studio)
 
 ### Comunidad
 - [Google Analytics Community](https://support.google.com/analytics/community)
 - [Analytics Mania](https://www.analyticsmania.com/)
 - [Simo Ahava's Blog](https://www.simoahava.com/)
+- [Looker Studio Gallery](https://lookerstudio.google.com/gallery)
 
 ---
 
@@ -195,6 +279,7 @@ Guía detallada paso a paso para configurar todas las etiquetas en Google Tag Ma
 ### Semanal
 - [ ] Revisar Performance en Search Console
 - [ ] Verificar eventos en GA4 Realtime
+- [ ] Revisar dashboards de Looker Studio
 - [ ] Comprobar que no haya errores
 
 ### Mensual
@@ -202,12 +287,16 @@ Guía detallada paso a paso para configurar todas las etiquetas en Google Tag Ma
 - [ ] Revisar Coverage en Search Console
 - [ ] Optimizar contenido según queries
 - [ ] Actualizar sitemap si hay nuevas páginas
+- [ ] Revisar métricas de conversion en Looker Studio
+- [ ] Ajustar dashboards según necesidades del equipo
 
 ### Trimestral
 - [ ] Auditoría completa de SEO
 - [ ] Revisar y actualizar meta descriptions
 - [ ] Optimizar velocidad de carga
 - [ ] Agregar nuevas integraciones si es necesario
+- [ ] Crear nuevos dashboards en Looker Studio
+- [ ] Revisar y actualizar métricas calculadas
 
 ---
 
