@@ -30,9 +30,9 @@ import { TranslateModule } from '@ngx-translate/core';
               </div>
               <div>
                 <h3 class="font-semibold text-slate-900 mb-1">{{ 'CONTACT.ADDRESS' | translate }}</h3>
-                <p class="text-slate-600">123 Innovation Street</p>
-                <p class="text-slate-600">Tech District, San Francisco, CA 94105</p>
-                <p class="text-slate-600">United States</p>
+                <p class="text-slate-600">Calle Tecnología, 15</p>
+                <p class="text-slate-600">46190 Riba-roja de Túria, Valencia</p>
+                <p class="text-slate-600">España</p>
               </div>
             </div>
 
@@ -45,8 +45,8 @@ import { TranslateModule } from '@ngx-translate/core';
               </div>
               <div>
                 <h3 class="font-semibold text-slate-900 mb-1">{{ 'CONTACT.PHONE' | translate }}</h3>
-                <p class="text-slate-600">+1 (555) 123-4567</p>
-                <p class="text-slate-600">+1 (555) 987-6543</p>
+                <p class="text-slate-600">+34 961 234 567</p>
+                <p class="text-slate-600">+34 961 987 654</p>
               </div>
             </div>
 
