@@ -33,6 +33,7 @@ import { ToastContainerComponent } from './shared/components/toast-container/toa
           <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-600">
             <a routerLink="/" class="hover:text-blue-600 transition-colors">{{ 'NAV.HOME' | translate }}</a>
             <a routerLink="/catalog" class="hover:text-blue-600 transition-colors">{{ 'NAV.CATALOG' | translate }}</a>
+            <a routerLink="/contact" class="hover:text-blue-600 transition-colors">{{ 'NAV.CONTACT' | translate }}</a>
             <a routerLink="/cart" class="hover:text-blue-600 transition-colors">{{ 'NAV.CART' | translate }}</a>
           </nav>
 
@@ -85,7 +86,7 @@ import { ToastContainerComponent } from './shared/components/toast-container/toa
             <div>
               <h4 class="text-white font-medium mb-4">{{ 'FOOTER.SUPPORT' | translate }}</h4>
               <ul class="space-y-2 text-sm">
-                <li><a href="#" class="hover:text-white">{{ 'FOOTER.CONTACT' | translate }}</a></li>
+                <li><a routerLink="/contact" class="hover:text-white">{{ 'FOOTER.CONTACT' | translate }}</a></li>
                 <li><a href="#" class="hover:text-white">{{ 'FOOTER.SHIPPING_POLICY' | translate }}</a></li>
                 <li><a href="#" class="hover:text-white">{{ 'FOOTER.WARRANTY' | translate }}</a></li>
               </ul>

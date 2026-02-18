@@ -15,6 +15,10 @@ export const routes: Routes = [
         loadComponent: () => import('./features/cart/cart.component').then(m => m.CartComponent)
     },
     {
+        path: 'contact',
+        loadComponent: () => import('./features/contact/contact.component').then(m => m.ContactComponent)
+    },
+    {
         path: 'checkout',
         loadChildren: () => import('./features/checkout/checkout.routes').then(m => m.CHECKOUT_ROUTES)
     },

@@ -10,6 +10,7 @@
     "NAV": {
         "HOME": "Home",
         "CATALOG": "Catalog",
+        "CONTACT": "Contact",
         "CART": "Cart",
         "LOGIN": "Login",
         "REGISTER": "Register",
@@ -77,5 +78,28 @@
         "NO_ACCOUNT": "Don't have an account?",
         "SIGN_UP": "Sign up",
         "LOG_IN": "Log in"
+    },
+    "CONTACT": {
+        "TITLE": "Get in Touch",
+        "SUBTITLE": "Have questions about our 3D printers? We're here to help! Reach out to our team and we'll get back to you as soon as possible.",
+        "INFO_TITLE": "Contact Information",
+        "ADDRESS": "Address",
+        "PHONE": "Phone",
+        "EMAIL": "Email",
+        "HOURS": "Business Hours",
+        "WEEKDAYS": "Monday - Friday",
+        "WEEKEND": "Saturday - Sunday",
+        "SOCIAL_TITLE": "Follow Us",
+        "SOCIAL_SUBTITLE": "Stay connected with us on social media for the latest updates, tips, and special offers.",
+        "FORM_TITLE": "Send us a Message",
+        "NAME": "Your Name",
+        "NAME_PLACEHOLDER": "John Doe",
+        "EMAIL_PLACEHOLDER": "your.email@example.com",
+        "SUBJECT": "Subject",
+        "SUBJECT_PLACEHOLDER": "How can we help you?",
+        "MESSAGE": "Message",
+        "MESSAGE_PLACEHOLDER": "Tell us more about your inquiry...",
+        "SEND": "Send Message",
+        "MAP": "Our Location"
     }
 }

@@ -10,6 +10,7 @@
     "NAV": {
         "HOME": "Inicio",
         "CATALOG": "Catálogo",
+        "CONTACT": "Contacto",
         "CART": "Carrito",
         "LOGIN": "Iniciar Sesión",
         "REGISTER": "Registrarse",
@@ -91,5 +92,28 @@
         "NEWSLETTER": "Boletín",
         "EMAIL_PLACEHOLDER": "Ingresa tu correo",
         "RIGHTS": "Todos los derechos reservados."
+    },
+    "CONTACT": {
+        "TITLE": "Contáctanos",
+        "SUBTITLE": "¿Tienes preguntas sobre nuestras impresoras 3D? ¡Estamos aquí para ayudarte! Comunícate con nuestro equipo y te responderemos lo antes posible.",
+        "INFO_TITLE": "Información de Contacto",
+        "ADDRESS": "Dirección",
+        "PHONE": "Teléfono",
+        "EMAIL": "Correo Electrónico",
+        "HOURS": "Horario de Atención",
+        "WEEKDAYS": "Lunes - Viernes",
+        "WEEKEND": "Sábado - Domingo",
+        "SOCIAL_TITLE": "Síguenos",
+        "SOCIAL_SUBTITLE": "Mantente conectado con nosotros en redes sociales para las últimas actualizaciones, consejos y ofertas especiales.",
+        "FORM_TITLE": "Envíanos un Mensaje",
+        "NAME": "Tu Nombre",
+        "NAME_PLACEHOLDER": "Juan Pérez",
+        "EMAIL_PLACEHOLDER": "tu.correo@ejemplo.com",
+        "SUBJECT": "Asunto",
+        "SUBJECT_PLACEHOLDER": "¿Cómo podemos ayudarte?",
+        "MESSAGE": "Mensaje",
+        "MESSAGE_PLACEHOLDER": "Cuéntanos más sobre tu consulta...",
+        "SEND": "Enviar Mensaje",
+        "MAP": "Nuestra Ubicación"
     }
 }
