@@ -1,6 +1,8 @@
 # 📊 Google Analytics - Guía de Configuración
 
-> **💡 NUEVO**: Ahora también soportamos **Google Tag Manager (GTM)**. GTM te permite gestionar múltiples herramientas de marketing desde un solo lugar. [Ver guía de GTM →](./GOOGLE_TAG_MANAGER.md)
+> **💡 NUEVO**: Ahora también soportamos **Google Tag Manager (GTM)** y **Google Search Console (GSC)**:
+> - [Ver guía de GTM →](./GOOGLE_TAG_MANAGER.md) - Gestión centralizada de tags de marketing
+> - [Ver guía de GSC →](./GOOGLE_SEARCH_CONSOLE.md) - Optimización SEO y visibilidad en búsquedas
 
 ## 🎯 Configuración Rápida
 

@@ -1,0 +1,14 @@
+# Robots.txt for JP 3D Printer Shop
+# https://jp-3d-printer-shop.netlify.app/robots.txt
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /checkout/
+Disallow: /user/profile
+
+# Sitemap location
+Sitemap: https://jp-3d-printer-shop.netlify.app/sitemap.xml
+
+# Crawl-delay (optional, helps prevent server overload)
+Crawl-delay: 10

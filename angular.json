@@ -26,6 +26,21 @@
                 "glob": "_redirects",
                 "input": "src",
                 "output": "/"
+              },
+              {
+                "glob": "sitemap.xml",
+                "input": "src",
+                "output": "/"
+              },
+              {
+                "glob": "robots.txt",
+                "input": "src",
+                "output": "/"
+              },
+              {
+                "glob": "googled8137d08e5a24013.html",
+                "input": "src",
+                "output": "/"
               }
             ],
             "styles": [
