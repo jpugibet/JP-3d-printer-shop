@@ -34,7 +34,7 @@ import { ToastService } from '../../core/services/toast.service';
               </div>
               <div>
                 <h3 class="font-semibold text-slate-900 mb-1">{{ 'CONTACT.ADDRESS' | translate }}</h3>
-                <p class="text-slate-600">Calle Tecnología, 15</p>
+                <p class="text-slate-600">Av. de la Pau, 61</p>
                 <p class="text-slate-600">46190 Riba-roja de Túria, Valencia</p>
                 <p class="text-slate-600">España</p>
               </div>
@@ -206,13 +206,19 @@ import { ToastService } from '../../core/services/toast.service';
 
       <!-- Map Section -->
       <div class="mt-12 bg-white rounded-2xl shadow-lg p-4 border border-slate-200">
-        <div class="bg-slate-100 rounded-xl h-96 flex items-center justify-center">
-          <div class="text-center">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-slate-400 mx-auto mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
-            </svg>
-            <p class="text-slate-500 font-medium">{{ 'CONTACT.MAP' | translate }}</p>
-          </div>
+        <div class="rounded-xl overflow-hidden h-96 w-full">
+          <iframe
+            src="https://www.google.com/maps?q=Av.+de+la+Pau+61,+46190+Riba-roja+de+T%C3%BAria,+Valencia,+España&output=embed"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+        <div class="text-center mt-4">
+          <p class="text-slate-500 font-medium">{{ 'CONTACT.MAP' | translate }}</p>
         </div>
       </div>
     </div>
