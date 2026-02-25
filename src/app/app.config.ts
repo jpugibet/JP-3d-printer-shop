@@ -7,6 +7,7 @@ import { TranslateHttpLoader, TRANSLATE_HTTP_LOADER_CONFIG } from '@ngx-translat
 
 import { routes } from './app.routes';
 import { AnalyticsService } from './core/services/analytics.service';
+import { TidioService } from './core/services/tidio.service';
 import { environment } from '../environments/environment';
 
 // Función para inicializar Google Analytics y Google Tag Manager
@@ -24,6 +25,15 @@ export function initializeAnalytics(analyticsService: AnalyticsService) {
     };
 }
 
+// Función para inicializar Tidio
+export function initializeTidio(tidioService: TidioService) {
+    return () => {
+        if ((environment as any).tidioProjectId) {
+            tidioService.initialize((environment as any).tidioProjectId);
+        }
+    };
+}
+
 export const appConfig: ApplicationConfig = {
     providers: [
         provideZoneChangeDetection({ eventCoalescing: true }),
@@ -34,6 +44,12 @@ export const appConfig: ApplicationConfig = {
             provide: APP_INITIALIZER,
             useFactory: initializeAnalytics,
             deps: [AnalyticsService],
+            multi: true
+        },
+        {
+            provide: APP_INITIALIZER,
+            useFactory: initializeTidio,
+            deps: [TidioService],
             multi: true
         },
         {

@@ -6,5 +6,9 @@ export const environment = {
     googleAnalyticsId: 'G-G8PPR7VQXD', // ⚠️ Reemplaza con tu ID real de GA4
     
     // Google Tag Manager - Reemplaza con tu Container ID (GTM-XXXXXXX)
-    googleTagManagerId: 'GTM-PKDJHJH8' // ⚠️ Reemplaza con tu ID real de GTM
+    googleTagManagerId: 'GTM-PKDJHJH8', // ⚠️ Reemplaza con tu ID real de GTM
+    
+    // Tidio Chat - Reemplaza con tu Project ID
+    tidioProjectId: 'zft6dekuglsk0lqyoavuj4c3hv72hxs' // ⚠️ Reemplaza con tu ID real de Tidio (ej: d1fe234c1234567890)
 };
+
