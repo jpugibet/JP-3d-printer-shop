@@ -38,7 +38,7 @@ export class TidioService {
      */
     private loadTidioScript(projectId: string): void {
         const script = document.createElement('script');
-        script.src = `https://cdn.tidio.co/${projectId}.js`;
+        script.src = `https://code.tidio.co/${projectId}.js`;
         script.async = true;
         document.head.appendChild(script);
     }
