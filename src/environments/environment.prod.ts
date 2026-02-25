@@ -9,6 +9,6 @@ export const environment = {
     googleTagManagerId: 'GTM-PKDJHJH8', // ⚠️ Reemplaza con tu ID real de GTM
     
     // Tidio Chat - Reemplaza con tu Project ID
-    tidioProjectId: 'zft6dekuglsk0lqyoavuj4c3hv72hxs' // ⚠️ Reemplaza con tu ID real de Tidio (ej: d1fe234c1234567890)
+    tidioProjectId: 'vzft6dekuglsk0lqyoavuj4c3hv72hxs' // ⚠️ Reemplaza con tu ID real de Tidio (ej: d1fe234c1234567890)
 };
 
