@@ -6,8 +6,7 @@ async function bootstrap() {
         console.log('🚀 Starting application...');
         console.log('📊 Environment:', process.env.NODE_ENV || 'development');
         console.log('🔗 Database URL:', process.env.DATABASE_URL ? '✅ Configured' : '❌ Missing');
-        console.log('🌐 Frontend URL:', process.env.FRONTEND_URL || 'Not set');
-        
+        console.log('🌐 Frontend URL:', process.env.FRONTEND_URL || 'Not set');        console.log('📨 Relay webhook URL:', process.env.RELAY_CONTACT_WEBHOOK_URL || 'Not set');        
         const app = await NestFactory.create(AppModule, {
             logger: ['error', 'warn', 'log', 'debug'],
         });
