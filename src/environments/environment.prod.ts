@@ -9,6 +9,8 @@ export const environment = {
     googleTagManagerId: 'GTM-PKDJHJH8', // ⚠️ Reemplaza con tu ID real de GTM
     
     // Tidio Chat - Reemplaza con tu Project ID
-    tidioProjectId: 'vzft6dekuglsk0lqyoavuj4c3hv72hxs' // ⚠️ Reemplaza con tu ID real de Tidio (ej: d1fe234c1234567890)
+    tidioProjectId: 'vzft6dekuglsk0lqyoavuj4c3hv72hxs', // ⚠️ Reemplaza con tu ID real de Tidio (ej: d1fe234c1234567890)
+
+    RELAY_CONTACT_WEBHOOK_URL:'https://hook.relay.app/api/v1/playbook/cmm9ii8tp07gu0om2abynhak5/trigger/fw-IHgL1ZwzCxi26JDSBKQ'
 };
 
